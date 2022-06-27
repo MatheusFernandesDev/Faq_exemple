@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Title } from "../styled";
 
-import { BsArrowDown } from "react-icons/bs";
+import { IoIosArrowDown } from "react-icons/io";
 
 import Faq from "react-faq-component";
 
@@ -7313,7 +7313,7 @@ const Datas = () => {
 
   const config = {
     animate: false,
-    arrowIcon: <BsArrowDown size={20} />,
+    arrowIcon: <IoIosArrowDown size={20} />,
     tabFocus: true,
   };
 

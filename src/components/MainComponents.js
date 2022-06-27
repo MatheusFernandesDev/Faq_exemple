@@ -27,5 +27,4 @@ export const ErrorMessage = styled.div`
     color: #000;
     border: 2px solid #FF0000;
     padding: 10px;
-  }
 `;
