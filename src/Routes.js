@@ -2,13 +2,13 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Faq from "./pages/Faq";
-import SignUp from "./pages/SignUp";
+import Register from "./pages/Register";
 
 export default () => {
   return (
     <Routes>
       <Route path="/faq" exact element={<Faq />} />
-      <Route path="/signup" exact element={<SignUp />} />
+      <Route path="/register" exact element={<Register />} />
     </Routes>
   );
 };
