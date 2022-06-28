@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Title } from "../styled";
 
-import { BsArrowDown } from "react-icons/bs";
+import { IoIosArrowDown } from "react-icons/io";
 
 import Faq from "react-faq-component";
 
@@ -7313,7 +7313,7 @@ const Datas = () => {
 
   const config = {
     animate: false,
-    arrowIcon: <BsArrowDown size={20} />,
+    arrowIcon: <IoIosArrowDown size={20} />,
     tabFocus: true,
   };
 
@@ -7425,7 +7425,7 @@ const Datas = () => {
   return (
     <>
       <Title hr onClick={() => setShowEleicoes(!showEleicoes)}>
-        Eleições 2022 <hr />
+        ELEIÇÕES 2022 <hr />
       </Title>
       {showEleicoes && <Faq data={eleicoes} styles={styles} config={config} />}
 
@@ -7930,45 +7930,46 @@ const Datas = () => {
       {showRacismo && <Faq data={racismo} styles={styles} config={config} />}
 
       <Title hr onClick={() => setShowPrevidencia(!showPrevidencia)}>
-        Previdência ou Previdência Social <hr />
+        PREVIDÊNCIA OU PREVIDÊNCIA SOCIAL <hr />
       </Title>
       {showPrevidencia && (
         <Faq data={previdencia} styles={styles} config={config} />
       )}
       <Title hr onClick={() => setShowLiminar(!showLiminar)}>
-        Liminar <hr />
+        LIMINAR <hr />
       </Title>
       {showLiminar && <Faq data={liminar} styles={styles} config={config} />}
       <Title hr onClick={() => setShowMandatoMandado(!showMandatoMandado)}>
-        Mandato e Mandado <hr />
+        MANDATO E MANDADO <hr />
       </Title>
       {showMandatoMandado && (
         <Faq data={mandatoMandado} styles={styles} config={config} />
       )}
       <Title hr onClick={() => setShowReformas(!showReformas)}>
-        Reformas <hr />
+        REFORMAS <hr />
       </Title>
       {showReformas && <Faq data={reformas} styles={styles} config={config} />}
       <Title hr onClick={() => setShowSetencaAcordao(!showSetencaAcordao)}>
-        Setença e Acórdão <hr />
+        SETENÇA E ACÓRDÃO
+        <hr />
       </Title>
       {showSetencaAcordao && (
         <Faq data={setencaAcordao} styles={styles} config={config} />
       )}
       <Title hr onClick={() => setShowUsucapiao(!showUsucapiao)}>
-        Usucapião <hr />
+        USUCAPIÃO <hr />
       </Title>
       {showUsucapiao && (
         <Faq data={usucapiao} styles={styles} config={config} />
       )}
       <Title hr onClick={() => setShowTransitoJulgado(!showTransitoJulgado)}>
-        Trânsito em julgado <hr />
+        TRÃNSITO EM JULGADO <hr />
       </Title>
       {showTransitoJulgado && (
         <Faq data={transitoJulgado} styles={styles} config={config} />
       )}
       <Title hr onClick={() => setShowCapitulo4(!showCapitulo4)}>
-        Capítulo 4 - Introdução <hr />
+        CAPÍTULO 4 - INTRUDUÇÃO <hr />
       </Title>
       {showCapitulo4 && (
         <Faq data={capitulo4} styles={styles} config={config} />
