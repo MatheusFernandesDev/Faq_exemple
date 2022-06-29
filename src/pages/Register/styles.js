@@ -28,7 +28,7 @@ export const MainContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 300px;
+  width: 350px;
   margin-bottom: 40px;
 `;
 
@@ -36,6 +36,17 @@ export const FormContainer = styled.div`
   width: 400px;
   display: flex;
   flex-direction: column;
+
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media ${device.mobile} {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Bg = styled.div`
@@ -95,6 +106,13 @@ export const Span = styled.span`
 export const Input = styled.input`
   height: 3em;
   padding: 0.5em;
+
+  @media ${device.tablet} {
+    width: 100%;
+  }
+  @media ${device.mobile} {
+    width: 100%;
+  }
 `;
 
 export const Label = styled.label`
