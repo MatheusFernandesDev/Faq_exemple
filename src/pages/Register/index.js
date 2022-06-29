@@ -1,5 +1,4 @@
-import React from "react";
-// import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
 import { ToastContainer } from "react-toastify";
 
 import {
@@ -13,34 +12,58 @@ import {
   FormContainer,
 } from "./styles.js";
 
+import { PageContainer } from "../../components/MainComponents";
+
 const register = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   return (
-    <Container>
+    <PageContainer>
       <MainContainer>
         <FormContainer>
           <Title>Cadastre-se</Title>
-          <Label for="user">Nome</Label>
-          <Input value="" placeholder=" Digite seu nome..." name="name" />
-          <Label for="user">Email</Label>
-          <Input value="" placeholder=" Digite seu usuário..." name="user" />
+          <Label>Nome</Label>
+          <Input
+            for="name"
+            value={name}
+            placeholder=" Digite seu nome..."
+            name="name"
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <Label>Email</Label>
+          <Input
+            for="email"
+            value={email}
+            placeholder=" Digite seu usuário..."
+            name="email"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
           <Label for="password">Senha</Label>
           <Input
-            value=""
+            value={password}
             placeholder="Digite uma senha..."
             name="password"
             type="password"
+            onChange={(e) => setPassword(e.target.value)}
           />
           <Label for="passwordConf">Confirmar senha</Label>
           <Input
-            value=""
+            value={confirmPassword}
             placeholder="Confirme a senha..."
             name="passwordConf	"
+            type="password"
+            onChange={(e) => setConfirmPassword(e.target.value)}
           />
-          <Button> Cadastrar </Button>
+          <Button onSubmit=""> Cadastrar </Button>
         </FormContainer>
       </MainContainer>
       <ToastContainer />
-    </Container>
+    </PageContainer>
   );
 };
 
